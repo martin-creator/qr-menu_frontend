@@ -4,7 +4,7 @@ import React, { useState, useContext } from 'react';
 import { addPlace } from '../apis';
 import AuthContext from '../contexts/AuthContext';
 
-// import ImageDropzone from './ImageDropzone';
+import ImageDropzone from './ImageDropzone';
 
 const PlaceForm = ({ onDone }) => {
   const [name, setName] = useState("");
@@ -36,7 +36,7 @@ const PlaceForm = ({ onDone }) => {
   
       <Form.Group>
         <Form.Label>Image</Form.Label>
-        {/* <ImageDropzone value={image} onChange={setImage} /> */}
+        <ImageDropzone value={image} onChange={setImage} />
       </Form.Group>
       <Button variant="standard" block onClick={onClick}>
         Add
