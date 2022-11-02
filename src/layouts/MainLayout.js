@@ -33,9 +33,16 @@ const MainLayout = ({ children }) => {
         </Nav>
 
         <Nav className="flex-grow-1 justify-content-end">
-          <Nav.Link onClick={onSignIn}>Login</Nav.Link>
+          {auth.token ? (
+            <Nav.Link onClick={onSignOut}>Logout</Nav.Link>
+          ) : (
+            [
+              <Nav.Link key={1} onClick={onSignIn}>Login</Nav.Link>,
+              <Nav.Link key={2} onClick={onRegister}>Register</Nav.Link>
+            ]
+          )}
+          
         </Nav>
-
       </Navbar>
       <Container>
         {children}
