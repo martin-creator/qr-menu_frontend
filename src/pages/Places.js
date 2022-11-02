@@ -7,7 +7,7 @@ import { fetchPlaces } from '../apis';
 import AuthContext from '../contexts/AuthContext';
 
 import MainLayout from '../layouts/MainLayout';
-// import PlaceForm from '../containers/PlaceForm';
+import PlaceForm from '../containers/PlaceForm';
 
 const Place = styled.div`
   margin-bottom: 20px;
@@ -73,11 +73,11 @@ const Places = () => {
     <MainLayout>
       <h3>My Places</h3>
 
-      {/* <Modal show={show} onHide={onHide} centered>
+      <Modal show={show} onHide={onHide} centered>
         <Modal.Body>
           <PlaceForm onDone={onDone} />
         </Modal.Body>
-      </Modal> */}
+      </Modal>
 
       <Row>
         {places.map((place) => (
