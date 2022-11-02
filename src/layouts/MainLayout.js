@@ -7,7 +7,7 @@ const MainLayout = ({ children }) => {
     const history = useHistory();
 
     const onSignIn = () => {
-        history.replace("/login");
+        history.replace("/login/");
       }
 
     return (
