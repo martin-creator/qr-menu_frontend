@@ -1,5 +1,7 @@
 import React from 'react';
+import MainLayout from '../layouts/MainLayout';
 
-const Home = () => <div>Home</div>
+const Login = () => <MainLayout>Login</MainLayout>
 
-export default Home;
+
+export default Login;
