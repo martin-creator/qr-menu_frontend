@@ -16,15 +16,14 @@ function App() {
         <AuthProvider>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path='/'>
-                        <Home/>
+                    <Route exact path="/">
+                        <Home />
                     </Route>
-                    <Route exact path='/login'>
-                        <Login/>
+                    <Route exact path="/login">
+                        <Login />
                     </Route>
-
-                    <PrivateRoute exact path='/places'>
-                        <Places/>
+                    <PrivateRoute exact path="/places">
+                        <Places />
                     </PrivateRoute>
                 </Switch>
             </BrowserRouter>
