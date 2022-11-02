@@ -82,7 +82,7 @@ const Places = () => {
       <Row>
         {places.map((place) => (
           <Col key={place.id} lg={4}>
-            <Place>
+            <Place onClick={() => history.push(`/places/${place.id}`)}>
               <div style={{ backgroundImage: `url(${place.image})` }}></div>
               <p>{place.name}</p>
             </Place>
