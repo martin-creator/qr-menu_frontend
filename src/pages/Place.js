@@ -17,6 +17,7 @@ import {
   } from '../apis';
   import AuthContext from '../contexts/AuthContext';
   import MainLayout from '../layouts/MainLayout';
+  import MenuItemForm from '../containers/MenuItemForm';
 
 
 
@@ -115,13 +116,13 @@ import {
             </div>
           </Col>
   
-          {/* <Col md={4}>
+           <Col md={4}>
             <Panel>
               <MenuItemForm place={place} onDone={onFetchPlace} />
             </Panel>
           </Col>
   
-          <Col md={8}>
+          {/*<Col md={8}>
             {place?.categories?.map((category) => (
               <div key={category.id} className="mb-5">
                 <div className="d-flex align-items-center mb-4">
