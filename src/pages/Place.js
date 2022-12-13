@@ -10,9 +10,9 @@ import styled from 'styled-components';
 
 import { 
     fetchPlace, 
-    // removePlace, 
-    // removeCategory, 
-    // removeMenuItem, 
+    removePlace, 
+    removeCategory, 
+    removeMenuItem, 
     // updatePlace 
   } from '../apis';
   import AuthContext from '../contexts/AuthContext';
@@ -54,26 +54,26 @@ import {
       }
     };
   
-    // const onRemovePlace = () => {
-    //   const c = window.confirm("Are you sure?");
-    //   if (c) {
-    //     removePlace(params.id, auth.token).then(onBack);
-    //   }
-    // };
+    const onRemovePlace = () => {
+      const c = window.confirm("Are you sure?");
+      if (c) {
+        removePlace(params.id, auth.token).then(onBack);
+      }
+    };
   
-    // const onRemoveCategory = (id) => {
-    //   const c = window.confirm("Are you sure?");
-    //   if (c) {
-    //     removeCategory(id, auth.token).then(onFetchPlace);
-    //   }
-    // };
+    const onRemoveCategory = (id) => {
+      const c = window.confirm("Are you sure?");
+      if (c) {
+        removeCategory(id, auth.token).then(onFetchPlace);
+      }
+    };
   
-    // const onRemoveMenuItem = (id) => {
-    //   const c = window.confirm("Are you sure?");
-    //   if (c) {
-    //     removeMenuItem(id, auth.token).then(onFetchPlace);
-    //   }
-    // };
+    const onRemoveMenuItem = (id) => {
+      const c = window.confirm("Are you sure?");
+      if (c) {
+        removeMenuItem(id, auth.token).then(onFetchPlace);
+      }
+    };
   
     // const onUpdatePlace = (tables) => {
     //   updatePlace(place.id, { number_of_tables: tables }, auth.token).then(
@@ -100,9 +100,9 @@ import {
                 </Button>
                 <h3 className="mb-0 ml-2 mr-2">{place.name}</h3>
   
-                {/* <Button variant="link" onClick={onRemovePlace}>
+                <Button variant="link" onClick={onRemovePlace}>
                   <AiOutlineDelete size={25} color="red" />
-                </Button> */}
+                </Button>
               </div>
   
               {/* <Button variant="link" onClick={showQRModal}>
@@ -130,9 +130,9 @@ import {
                   <h4 className="mb-0 mr-2">
                     <b>{category.name}</b>
                   </h4>
-                  {/* <Button variant="link" onClick={() => onRemoveCategory(category.id)}>
+                  <Button variant="link" onClick={() => onRemoveCategory(category.id)}>
                     <AiOutlineDelete size={25} color="red" />
-                  </Button> */}
+                  </Button>
                 </div>
                 {category.menu_items.map((item) => (
                   <MenuItem 
