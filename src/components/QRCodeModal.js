@@ -13,7 +13,7 @@ const QRCodeModal = ({ show, onHide, place, onUpdatePlace }) => (
             Total tables: <b>{place.number_of_tables}</b>
           </h5>
 
-          {/* <OperationButton 
+          <OperationButton 
             variant="lightgray"
             size="sm"
             onClick={() => onUpdatePlace(place.number_of_tables - 1)}
@@ -26,7 +26,7 @@ const QRCodeModal = ({ show, onHide, place, onUpdatePlace }) => (
             onClick={() => onUpdatePlace(place.number_of_tables + 1)}
           >
             +
-          </OperationButton> */}
+          </OperationButton>
         </div>
 
         <Row>

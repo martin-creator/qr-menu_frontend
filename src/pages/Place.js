@@ -76,15 +76,15 @@ const Place = () => {
     }
   };
 
-  // const onUpdatePlace = (tables) => {
-  //   updatePlace(place.id, { number_of_tables: tables }, auth.token).then(
-  //     (json) => {
-  //       if (json) {
-  //         setPlace(json);
-  //       }
-  //     }
-  //   )
-  // }
+  const onUpdatePlace = (tables) => {
+    updatePlace(place.id, { number_of_tables: tables }, auth.token).then(
+      (json) => {
+        if (json) {
+          setPlace(json);
+        }
+      }
+    )
+  }
 
   useEffect(() => {
     onFetchPlace();
@@ -173,7 +173,7 @@ const Place = () => {
           centered 
           onUpdatePlace={onUpdatePlace}
         />
-        
+
     </MainLayout>
   )
 };
