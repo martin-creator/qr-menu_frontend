@@ -77,7 +77,7 @@ const Menu = () => {
     <Container className="mt-5 mb-5">
       <Row className="justify-content-center">
         <Col lg={8}>
-          {/* {showShoppingCart ? (
+          {showShoppingCart ? (
             <ShoppingCart 
               items={Object.keys(shoppingCart)
                 .map((key) => shoppingCart[key])
@@ -96,7 +96,7 @@ const Menu = () => {
               color={place.color} 
               font={place.font}
             />
-          )} */}
+          )}
           
         </Col>
       </Row>
