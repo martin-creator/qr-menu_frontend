@@ -31,12 +31,12 @@ import {
   
   const Place = () => {
     const [place, setPlace] = useState({});
-    // const [menuItemFormShow, setMenuItemFormShow] = useState(false);
+    const [menuItemFormShow, setMenuItemFormShow] = useState(false);
     // const [selectedItem, setSelectedItem] = useState(null);
     // const [qrCode, setQrCode] = useState(false);
   
-    // const showModal = () => setMenuItemFormShow(true);
-    // const hideModal = () => setMenuItemFormShow(false);
+    const showModal = () => setMenuItemFormShow(true);
+    const hideModal = () => setMenuItemFormShow(false);
   
     // const showQRModal = () => setQrCode(true);
     // const hideQRModal = () => setQrCode(false);
@@ -134,7 +134,7 @@ import {
                     <AiOutlineDelete size={25} color="red" />
                   </Button> */}
                 </div>
-                {/* {category.menu_items.map((item) => (
+                {category.menu_items.map((item) => (
                   <MenuItem 
                     key={item.id} 
                     item={item} 
@@ -144,13 +144,13 @@ import {
                     }}
                     onRemove={() => onRemoveMenuItem(item.id)}
                   />
-                ))} */}
+                ))}
               </div>
             ))}
           </Col>
         </Row>
       
-        {/* <Modal show={menuItemFormShow} onHide={hideModal} centered>
+        <Modal show={menuItemFormShow} onHide={hideModal} centered>
           <Modal.Body>
             <h4 className="text-center">Menu Item</h4>
             <MenuItemForm 
@@ -162,7 +162,7 @@ import {
               item={selectedItem}
             />
           </Modal.Body>
-        </Modal> */}
+        </Modal>
   
         {/* <QRCodeModal 
           show={qrCode} 

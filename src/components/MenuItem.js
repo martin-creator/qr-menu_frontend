@@ -32,19 +32,19 @@ const MenuItem = ({ item, onEdit, onRemove, onOrder, color }) => (
           <h4 className="mb-0">
             <b>{item.name}</b>
           </h4>
-          {/* <div>
+          <div>
             { onEdit ? (
               <Button variant="link" onClick={onEdit}>
                 <BiEdit size={20} />
               </Button>
             ) : null }
 
-            { onRemove ? (
+            {/* { onRemove ? (
               <Button variant="link" onClick={onRemove}>
                 <AiOutlineDelete size={20} color="red" />
               </Button>
-            ) : null }
-          </div> */}
+            ) : null } */}
+          </div>
         </div>
         <p className="mb-4">{item.description}</p>
       </div>
