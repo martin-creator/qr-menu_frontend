@@ -32,7 +32,7 @@ import {
   const Place = () => {
     const [place, setPlace] = useState({});
     const [menuItemFormShow, setMenuItemFormShow] = useState(false);
-    // const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState(null);
     // const [qrCode, setQrCode] = useState(false);
   
     const showModal = () => setMenuItemFormShow(true);
