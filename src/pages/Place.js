@@ -18,6 +18,7 @@ import {
   import AuthContext from '../contexts/AuthContext';
   import MainLayout from '../layouts/MainLayout';
   import MenuItemForm from '../containers/MenuItemForm';
+  import MenuItem from '../components/MenuItem';
 
 
 
@@ -122,18 +123,18 @@ import {
             </Panel>
           </Col>
   
-          {/*<Col md={8}>
+          <Col md={8}>
             {place?.categories?.map((category) => (
               <div key={category.id} className="mb-5">
                 <div className="d-flex align-items-center mb-4">
                   <h4 className="mb-0 mr-2">
                     <b>{category.name}</b>
                   </h4>
-                  <Button variant="link" onClick={() => onRemoveCategory(category.id)}>
+                  {/* <Button variant="link" onClick={() => onRemoveCategory(category.id)}>
                     <AiOutlineDelete size={25} color="red" />
-                  </Button>
+                  </Button> */}
                 </div>
-                {category.menu_items.map((item) => (
+                {/* {category.menu_items.map((item) => (
                   <MenuItem 
                     key={item.id} 
                     item={item} 
@@ -143,10 +144,10 @@ import {
                     }}
                     onRemove={() => onRemoveMenuItem(item.id)}
                   />
-                ))}
+                ))} */}
               </div>
             ))}
-          </Col> */}
+          </Col>
         </Row>
       
         {/* <Modal show={menuItemFormShow} onHide={hideModal} centered>
