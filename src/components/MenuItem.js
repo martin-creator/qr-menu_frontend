@@ -54,7 +54,7 @@ const MenuItem = ({ item, onEdit, onRemove, onOrder, color }) => (
             <b style={{ color }}>${item.price}</b>
           </h5>
 
-          {/* {onOrder ? (
+          {onOrder ? (
             <Button 
               variant="standard" 
               style={{ backgroundColor: color }} 
@@ -64,7 +64,7 @@ const MenuItem = ({ item, onEdit, onRemove, onOrder, color }) => (
             >
               {!item.quantity ? "Add to shopping cart" : `Add one more (${item.quantity})`}
             </Button>
-          ) : null} */}
+          ) : null}
         </div>
 
         {!item.is_available ? (<small className="text-secondary">Not Available</small>) : null}

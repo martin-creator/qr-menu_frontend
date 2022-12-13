@@ -20,7 +20,7 @@ const OrderButton = styled(Button)`
 
 const Menu = () => {
   const [place, setPlace] = useState({});
-//   const [shoppingCart, setShoppingCart] = useState({});
+  const [shoppingCart, setShoppingCart] = useState({});
 //   const [showShoppingCart, setShowShoppingCart] = useState(false);
 
   const params = useParams();
@@ -33,15 +33,15 @@ const Menu = () => {
     }
   };
 
-//   const onAddItemtoShoppingCart = (item) => {
-//     setShoppingCart({
-//       ...shoppingCart,
-//       [item.id]: {
-//         ...item,
-//         quantity: (shoppingCart[item.id]?.quantity || 0) + 1,
-//       }
-//     });
-//   }
+  const onAddItemtoShoppingCart = (item) => {
+    setShoppingCart({
+      ...shoppingCart,
+      [item.id]: {
+        ...item,
+        quantity: (shoppingCart[item.id]?.quantity || 0) + 1,
+      }
+    });
+  }
 
 //   const onRemoveItemToShoppingCart = (item) => {
 //     if (totalQuantity === 1) {

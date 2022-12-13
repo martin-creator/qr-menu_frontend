@@ -41,7 +41,7 @@ const MenuList = ({ place, shoppingCart = {}, onOrder, font = "", color = "" }) 
                     ...item,
                     quantity: shoppingCart[item.id]?.quantity,
                   }} 
-                //   onOrder={onOrder}
+                onOrder={onOrder}
                 //   color={color}
                 />
               ))
