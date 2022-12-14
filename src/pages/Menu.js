@@ -21,7 +21,7 @@ const OrderButton = styled(Button)`
 const Menu = () => {
   const [place, setPlace] = useState({});
   const [shoppingCart, setShoppingCart] = useState({});
-//   const [showShoppingCart, setShowShoppingCart] = useState(false);
+  const [showShoppingCart, setShowShoppingCart] = useState(false);
 
   const params = useParams();
 
@@ -62,12 +62,12 @@ const Menu = () => {
 //     setShowShoppingCart(false);
 //   }
 
-//   const totalQuantity = useMemo(
-//     () => Object.keys(shoppingCart)
-//             .map((i) => shoppingCart[i].quantity)
-//             .reduce((a,b) => a + b, 0),
-//       [shoppingCart]
-//   );
+  const totalQuantity = useMemo(
+    () => Object.keys(shoppingCart)
+            .map((i) => shoppingCart[i].quantity)
+            .reduce((a,b) => a + b, 0),
+      [shoppingCart]
+  );
 
   useEffect(() => {
     onFetchPlace();
@@ -101,14 +101,14 @@ const Menu = () => {
         </Col>
       </Row>
 
-      {/* {totalQuantity ? (
+      {totalQuantity ? (
         <OrderButton 
           variant="standard"
           style={{ backgroundColor: place.color }} 
           onClick={() => setShowShoppingCart(!showShoppingCart)}>
           {showShoppingCart ? <IoCloseOutline size={25} /> : totalQuantity}
         </OrderButton>
-      ) : null} */}
+      ) : null}
     </Container>
   )
 };
