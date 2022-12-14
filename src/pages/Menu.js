@@ -57,10 +57,10 @@ const Menu = () => {
     });
   }
 
-//   const onPaymentDone = () => {
-//     setShoppingCart({});
-//     setShowShoppingCart(false);
-//   }
+  const onPaymentDone = () => {
+    setShoppingCart({});
+    setShowShoppingCart(false);
+  }
 
   const totalQuantity = useMemo(
     () => Object.keys(shoppingCart)

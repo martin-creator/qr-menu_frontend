@@ -13,7 +13,7 @@ import {
   removePlace,
   removeCategory,
   removeMenuItem,
-  // updatePlace 
+  updatePlace 
 } from '../apis';
 import AuthContext from '../contexts/AuthContext';
 import MainLayout from '../layouts/MainLayout';
