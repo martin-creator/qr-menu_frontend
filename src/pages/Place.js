@@ -110,12 +110,12 @@ const Place = () => {
               <AiOutlineQrcode size={25} />
             </Button>
 
-            {/* <Button variant="link" href={`/places/${params.id}/orders`}>
+            <Button variant="link" href={`/places/${params.id}/orders`}>
                 <RiFileList3Line size={25} />
               </Button>
               <Button variant="link" href={`/places/${params.id}/settings`}>
                 <FiSettings size={25} />
-              </Button> */}
+              </Button>
           </div>
         </Col>
 
