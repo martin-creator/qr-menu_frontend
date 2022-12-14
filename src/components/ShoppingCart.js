@@ -25,7 +25,7 @@ const ShoppingCart = ({ items, onAdd, onRemove, onPaymentDone, color }) => {
                 <span>${item.price}</span>
               </div>
 
-              {/* <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center">
                 <OperationButton
                   variant="lightgray"
                   size="sm"
@@ -42,7 +42,7 @@ const ShoppingCart = ({ items, onAdd, onRemove, onPaymentDone, color }) => {
                   +
                 </OperationButton>
               </div>
-            </div> */}
+            </div>
           ))}
 
           <hr/>

@@ -43,19 +43,19 @@ const Menu = () => {
     });
   }
 
-//   const onRemoveItemToShoppingCart = (item) => {
-//     if (totalQuantity === 1) {
-//       setShowShoppingCart(false);
-//     }
+  const onRemoveItemToShoppingCart = (item) => {
+    if (totalQuantity === 1) {
+      setShowShoppingCart(false);
+    }
 
-//     setShoppingCart({
-//       ...shoppingCart,
-//       [item.id]: {
-//         ...item,
-//         quantity: (shoppingCart[item.id]?.quantity || 0) - 1,
-//       }
-//     });
-//   }
+    setShoppingCart({
+      ...shoppingCart,
+      [item.id]: {
+        ...item,
+        quantity: (shoppingCart[item.id]?.quantity || 0) - 1,
+      }
+    });
+  }
 
 //   const onPaymentDone = () => {
 //     setShoppingCart({});
