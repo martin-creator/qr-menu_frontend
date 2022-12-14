@@ -12,6 +12,7 @@ import Places from '../pages/Places';
 import Place from '../pages/Place';
 import Register from "../pages/Register";
 import Menu from "../pages/Menu";
+import Orders from "../pages/Orders";
 
 
 function App() {
