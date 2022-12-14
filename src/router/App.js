@@ -37,6 +37,9 @@ function App() {
                     <PrivateRoute exact path="/places">
                         <Places />
                     </PrivateRoute>
+                    <PrivateRoute exact path='/places/:id/orders'>
+                        <Orders />
+                    </PrivateRoute>
                 </Switch>
             </BrowserRouter>
             <ToastContainer />

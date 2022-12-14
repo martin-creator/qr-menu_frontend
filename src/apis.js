@@ -120,6 +120,10 @@ export function createPaymentIntent(data, token) {
   return request("/api/create_payment_intent/", { data, token, method: "POST" });
 }
 
+export function fetchOrders(placeId, token) {
+  return request(`/api/orders/?place=${placeId}`, { token });
+}
+
 
 
 
